@@ -1,0 +1,15 @@
+The selected code is a function in a Python file that is used to read a YAML file and
+return the contents as a ConfigBox object.
+
+The function uses the yaml library to read the file and parse its contents into a Python object.
+
+The function has type annotations, which are comments that provide information about the types of inputs and outputs of a function. In this case,
+the function takes a path_to_yaml parameter of type Path and returns a ConfigBox object.
+It also raises a ValueError or an Exception if there is an error reading the YAML file.
+
+The function starts by opening the YAML file and trying to parse its contents using the yaml.safe_load function.
+If the file is empty, the function raises a BoxValueError.
+If there is an error reading the file, the function raises an Exception.
+
+After successfully reading the file, the function logs a message and returns the contents as a ConfigBox object.
+The ConfigBox object is a Python library that allows you to store and access configuration data in a structured way.
